@@ -52,9 +52,11 @@ class Circle{
     private double radius;
 
     Circle() {
+         super();
         this.radius = 1.0;
     }
     Circle(double _radius) {
+         super();
         this.radius = _radius;
     }
 
@@ -100,6 +102,7 @@ class Car{
      * Default constructor
      */
     Car(){
+         super();
         this.make = "Mercedes";
         this.model = "Mercedes-AMG classe A Compacte";
         this.year = 1995;
@@ -115,6 +118,7 @@ class Car{
      *
      */
     Car(String _make, String _model, int _year){
+         super();
         this();
         this.make = _make;
         this.model = _model;
@@ -129,6 +133,7 @@ class Car{
      * @param _price
      */
     Car(String _make, String _model, int _year,String _color, double _price){
+         super();
         this(_make,_model,_year);
         this.make = _make;
         this.model = _model;
@@ -166,17 +171,20 @@ class Student {
     private char grade;
 
     Student(){
+         super();
         this.name ="Eleanor Yace";
         this.age = 23;
         this.course = "Communication";
         this.grade = 'A';
     }
     Student(String _name, int _age) {
+         super();
         this();
         this.name = _name;
         this.age = _age;
     }
     Student(String _name, int _age, String _course, char _grade ) {
+        super();
         this(_name,_age);
         this.name = _name;
         this.age = _age;
